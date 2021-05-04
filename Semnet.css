@@ -17,7 +17,7 @@ body{
 }
 
 
-ul li a {
+ul li{
     font-size: 20px;
     display: inline-block;
     color: white;
@@ -25,11 +25,12 @@ ul li a {
     padding: 10px;
     letter-spacing: 2px;
     background-color: salmon;
-    border:1px solid salmon;    
+    border:1px solid salmon;
+    max-width: max-content; 
 }
 li{    
     display: inline-block;
-    margin: 15px;  
+    margin: 15px;
     margin-bottom: 8px;
 
 }
@@ -40,9 +41,9 @@ ul{
     text-decoration: none;
 
 }
+                                    /* LISTA E DROPDOWN */
 
-
- a:hover{
+ .lista:hover{
     border: 1px solid #18191a;
     background-color: #18191a ;
     border-top: 1px solid #fff;
@@ -50,23 +51,56 @@ ul{
 
 }
 
-a:hover{
+.lista:hover{
     color: salmon;
     border: 1px solid #18191a;
     border-left: 1px solid #fff;
     transition: 1.9s;
 }
-a:hover{
+.lista:hover{
     border: 1px solid #18191a;
     border-right: 1px solid #18191a;
     transition: 0.5s;
 }
 
-a:hover{
+.lista:hover{
     color: salmon;
     border-bottom: 1px solid #fff;
     transition: 1.0s;
 }
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    max-width: 100px;
+}
+
+.dropli{
+    font-family:sans-serif;
+    width: 90px;
+    right:60px;
+    position: relative;
+    background-color: tomato;
+    border: none;
+}
+a{
+    background-image: url();
+}
+
+
+
+
+
+
+
+
+
+
+                                    /* FIM LISTA E DROPDOWN */
+
 
 p{
     color: white;

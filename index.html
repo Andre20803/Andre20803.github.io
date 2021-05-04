@@ -6,7 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-    <titleÁlbuns André</title>
+    <title>No Internet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+    
+        $(".lista").hover(function(){
+        $(".drop").slideDown();
+
+
+        });
+    
+        $('.drop').mouseleave(function(){
+            $('.drop').hide(400);
+        });
+        
+
+        $('html').ready(function(){
+            alert('Página feita por André Luiz De Oliveira, estudante de programação e desenvolvimento web.')
+        });
+
+});
+    </script>
     <link rel="stylesheet" href="Semnet.css">
 </head>
 
@@ -14,14 +36,21 @@
     <div class="nav">
 
         <div class="icons">
-            <a href="https://www.facebook.com/andreLuiz0516"><i class="fab fa-facebook-square" style="font-size: 40px; color: white;"></a></i>
-            <a href="https://www.instagram.com/luiz_olv002/"> <i class="fab fa-instagram" style="font-size: 40px; color: white;"></i> </a>
-                <a href="https://www.linkedin.com/in/andr%C3%A9-luiz002/"><i class="fab fa-linkedin-in" style="font-size: 40px; color: white;"></i></a>
-                   
-                    <ul>
-                        <li class="lista"><a href="">+ Álbuns</a></li>
-                    </ul>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"
+                    style="font-size: 40px; color: white;"></a></i>
+            <a href=https://www.instagram.com /> <i class="fab fa-instagram" style="font-size: 40px; color: white;"></i>
+            </a>
+            <a href="Linkedin.com.br"><i class="fab fa-linkedin-in" style="font-size: 40px; color: white;"></i></a>
+            
+            <ul>
+                <li class="lista" id="js">+ Álbuns</li>
+                <ul style="display:none;" class="drop">
+                    <li class="dropli" id="wiese"><a href="">Klaus Wiese</a></li>
+                    <li class="dropli" id="jean"><a href="">Jean M. Jarre</a></li>
 
+                </ul>
+            </ul>
+            
 
         </div>
 
@@ -37,7 +66,7 @@
         <p>Dreams is an album by Hungarian guitarist Gábor Szabó featuring performances recorded in 1968
             and released on the Skye label. The design was
             made by David Stahlberg, and features artwork by English illustrator John Austen entitled "Vision".</p>
-        <hr style="border: 0.5px white dashed;"> 
+        <hr style="border: 0.5px white dashed;">
         <p class="conteudo">"Galatea's Guitar" – 5:33 <br>
             "Half the Day is the Night" (Gary McFarland) – 4:23 <br>
             "Song of Injured Love" (Manuel de Falla) – 4:05 <br>
@@ -71,7 +100,7 @@
 
 
     </article>
-    <hr >
+    <hr>
     <article class="imagens">
 
         <img src="bacchanal.jpg">
@@ -97,7 +126,7 @@
 
     </article>
 
-    
+
 
 
 
